@@ -41,7 +41,7 @@ def noid(link, time_schedule):
             isStarted = True
 
 # Función principal que inicia subprocesos para abrir enlaces
-def mainq(link, time_schedule, current_time):
+def mainq(link, time_schedule):
     thread3 = threading.Thread(target=noid, args=(link, time_schedule), daemon=True)
     thread3.start()
     thread3.join()
@@ -175,3 +175,5 @@ ventana.protocol("WM_DELETE_WINDOW", lambda: [detener_proceso_func(), ventana.de
 
 # Inicio del bucle principal de la interfaz gráfica
 ventana.mainloop()
+
+

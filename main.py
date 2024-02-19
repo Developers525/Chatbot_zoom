@@ -7,12 +7,6 @@ import time
 import threading
 import pyperclip
 from datetime import datetime
-from tkinter import PhotoImage
-from PIL import Image, ImageTk
-
-
-
-
 
 # Enlace de paneñista de vanessa para webinar de los jueves
 lst = [

@@ -150,14 +150,14 @@ boton.grid(row=0, column=2, pady=(40, 20))
 
 # ------------------- BOTONES PARA CAMBIAR EL TIEMPO -------------------
 
-boton_tiempo_7 = tk.Button(ventana, text="7 segundos", command=lambda: cambiar_tiempo(7), width=20, height=2, bg="#F5F5DC", font=("Arial", 10, "bold"))
-boton_tiempo_7.grid(row=2, column=2, pady=(10, 20), padx=(10, 10))
+boton_tiempo_7 = tk.Button(ventana, text="7 segundos", command=lambda: cambiar_tiempo(7), width=18, height=2, bg="#F5F5DC", font=("Arial", 10, "bold"))
+boton_tiempo_7.grid(row=1, column=2, pady=(10, 20), padx=(10, 10))
 
-boton_tiempo_10 = tk.Button(ventana, text="10 segundos", command=lambda: cambiar_tiempo(10), width=20, height=2, bg="#F5F5DC", font=("Arial", 10, "bold"))
-boton_tiempo_10.grid(row=3, column=2, pady=(10, 20), padx=(10, 10))
+boton_tiempo_10 = tk.Button(ventana, text="10 segundos", command=lambda: cambiar_tiempo(10), width=18, height=2, bg="#F5F5DC", font=("Arial", 10, "bold"))
+boton_tiempo_10.grid(row=2, column=2, pady=(10, 20), padx=(10, 10))
 
-boton_tiempo_15 = tk.Button(ventana, text="15 segundos", command=lambda: cambiar_tiempo(15), width=20, height=2, bg="#F5F5DC", font=("Arial", 10, "bold"))
-boton_tiempo_15.grid(row=4, column=2, pady=(10, 20), padx=(10, 10))
+boton_tiempo_15 = tk.Button(ventana, text="15 segundos", command=lambda: cambiar_tiempo(15), width=18, height=2, bg="#F5F5DC", font=("Arial", 10, "bold"))
+boton_tiempo_15.grid(row=3, column=2, pady=(10, 20), padx=(10, 10))
  
 
 

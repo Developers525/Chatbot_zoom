@@ -130,15 +130,14 @@ ventana.geometry("950x650+{}+{}".format(
 
 # Creación de botones y configuración de la interfaz gráfica
 
-# Segunda columna con 3 botones
 boton_detener = tk.Button(ventana, text="Detener a Vanessa", command=detener_proceso_func, width=20, height=2, bg="#F5F5DC")
 boton_detener.grid(row=0, column=0, pady=(10, 20))
 
-# Tercera columna con 1 botón
+# ------------------- BOTONES DE COMENZAR -------------------
+
 boton_copiar_oxxo = tk.Button(ventana, text="Mensaje Oxxo -comenzar- ", command=lambda: copiar_texto('Genera tu ficha de Oxxo 👉 https://secure.seresderiqueza.com/genera_ficha_oxxo'), width=30, height=2, bg="#F5F5DC")
 boton_copiar_oxxo.grid(row=1, column=1, pady=(10, 25), padx=(10, 10))
 
-# Cuarta columna con 3 botones
 boton_copiar_spei = tk.Button(ventana, text="Mensaje Spei -comenzar-", command=lambda: copiar_texto('Genera tu ficha de transferencia (SPEI) 👉  https://secure.seresderiqueza.com/genera_fichas_spei'), width=30, height=2, bg="#F5F5DC")
 boton_copiar_spei.grid(row=2, column=1, pady=(10, 25), padx=(10, 10))
 
@@ -146,10 +145,12 @@ boton_copiar_ultimos_minutos = tk.Button(ventana, text="Mensaje Ultimos minutos 
 boton_copiar_ultimos_minutos.grid(row=3, column=1, pady=(10, 25), padx=(10, 10))
 
 
-# Primera columna con 1 botón
+# ------------------- BOTONES PARA PRENDER A VANESSA -------------------
 boton = tk.Button(ventana, text="Prende a Vanessa", command=on_button_click, width=20, height=10, bg="#F5F5DC")
 boton.grid(row=0, column=2, pady=(40, 20))
 
+
+# ------------------- BOTONES PARA CAMBIAR EL TIEMPO -------------------
 
 boton_tiempo_7 = tk.Button(ventana, text="7 segundos", command=lambda: cambiar_tiempo(7), width=20, height=2, bg="#F5F5DC")
 boton_tiempo_7.grid(row=2, column=2, pady=5, padx=(10, 10))
@@ -159,25 +160,29 @@ boton_tiempo_10.grid(row=3, column=2, pady=5, padx=(10, 10))
 
 boton_tiempo_15 = tk.Button(ventana, text="15 segundos", command=lambda: cambiar_tiempo(15), width=20, height=2, bg="#F5F5DC")
 boton_tiempo_15.grid(row=4, column=2, pady=5, padx=(10, 10))
+ 
 
-# Tercera columna con 1 botón
+
+# ------------------- BOTONES DE SALES -------------------
+
 boton_copiar_oxxo = tk.Button(ventana, text="Mensaje Oxxo -Sales- ", command=lambda: copiar_texto('Genera tu ficha de Oxxo 👉 https://seresderiqueza.mx/genera_ficha_oxxo_sl'), width=30, height=2, bg="#F5F5DC")
 boton_copiar_oxxo.grid(row=1, column=3, pady=(10, 20))
 
-# Cuarta columna con 3 botones
 boton_copiar_spei = tk.Button(ventana, text="Mensaje Spei -Sales-", command=lambda: copiar_texto('Genera tu ficha de transferencia (SPEI) 👉  https://seresderiqueza.mx/genera_ficha_spei_sl'), width=30, height=2, bg="#F5F5DC")
 boton_copiar_spei.grid(row=2, column=3, pady=(10, 20))
 
 boton_copiar_ultimos_minutos = tk.Button(ventana, text="Mensaje Ultimos minutos -Sales-", command=lambda: copiar_texto('⏰ ÚLTIMOS MINUTOS!!! ⏰ Inscríbete ahora al programa: 👉 https://seresderiqueza.mx/riqueza_infinita_sls 👈'), width=30, height=2, bg="#F5F5DC")
 boton_copiar_ultimos_minutos.grid(row=3, column=3, pady=(10, 20))
 
+
+# ------------------- BOTONES PARA RESTABLECER FUNCION -------------------
+
 boton_restablecer = tk.Button(ventana, text="Restablecer Función", command=restablecer_funcion, width=20, height=2, bg="#F5F5DC")
 boton_restablecer.grid(row=0, column=4, pady=(10, 20))
+
 
 # Configuración de la función de cierre para detener todos los hilos antes de cerrar la ventana
 ventana.protocol("WM_DELETE_WINDOW", lambda: [detener_proceso_func(), ventana.destroy()])
 
 # Inicio del bucle principal de la interfaz gráfica
 ventana.mainloop()
-
-
